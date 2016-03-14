@@ -1,0 +1,23 @@
+PASS
+SELECT ATTRIBUTE(S):
+cust, month, 1_sum_quant, 2_sum_quant, 3_sum_quant
+
+NUMBER OF GROUPING VARIABLES(n):
+3
+
+GROUPING ATTRIBUTES(V):
+cust, month
+
+F-VECT([F]):
+1_sum_quant, 2_sum_quant, 3_sum_quant
+
+SELECT CONDITION-VECT([σ]): 
+year==1997
+1.cust=cust
+2.cust=cust
+2.month<month
+3.cust=cust
+3.month=month
+
+HAVING_CONDITION(G):
+2_sum_quant < 1_sum_quant / 2 and 2_sum_quant + 3_sum_quant >= 1_sum_quant / 2

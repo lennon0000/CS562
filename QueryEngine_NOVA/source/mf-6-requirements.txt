@@ -1,0 +1,30 @@
+注意，月份是month，不是mon
+
+
+SELECT ATTRIBUTE(S):
+cust, 1_sum_quant, 2_sum_quant, 3_sum_quant, avg(quant), sum(quant), count(*)
+
+NUMBER OF GROUPING VARIABLES(n):
+3 
+
+GROUPING ATTRIBUTES(V):
+cust, prod 
+
+F-VECT([F]):
+1_sum_quant, 1_avg_quant, 2_sum_quant, 3_sum_quant, 3_avg_quant 
+
+
+SELECT CONDITION-VECT([σ]): 
+1.state=‘NY’
+2.state=‘NJ’
+3.state=‘CT’
+如果这里涉及到跟字符串的对比，则应该用   =‘’
+涉及到数字条件时，则为 ==n
+涉及到不等于<>时，写 '!='
+如果是1.cust = cust这种，则右边不写‘’，并且在写右边时，把att写到前边比如 month-1   或是quan*2
+右边如果有agg，写成1_sum_quant这种
+HAVING_CONDITION(G):
+1_sum_quant > 200 * 2_sum_quant or 1_avg_quant > 3_avg_quant 
+如果这里涉及到 跟字符串的对比，则字符串需要用 “”
+需要用空格隔开,包括符号之间
+不等于号得写为<>

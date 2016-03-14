@@ -1,0 +1,20 @@
+TEST-PASSED
+SELECT ATTRIBUTE(S):
+cust, prod, max, min, avg
+
+NUMBER OF GROUPING VARIABLES(n):
+3
+
+GROUPING ATTRIBUTES(V):
+cust, prod
+
+F-VECT([F]):
+1_sum_quant, 1_count_quant, 1_avg_quant, 2_avg_quant, 3_avg_quant
+
+SELECT CONDITION-VECT([σ]): 
+1.cust=cust
+1.prod=prod
+2.cust=cust
+2.prod-prod
+
+HAVING_CONDITION(G):

@@ -1,0 +1,27 @@
+PASS
+SELECT ATTRIBUTE(S):
+prod, month, 3_count_prod, 4_count_prod
+
+NUMBER OF GROUPING VARIABLES(n):
+4
+
+GROUPING ATTRIBUTES(V):
+prod, month
+
+F-VECT([F]):
+1_avg_quant, 2_avg_quant
+
+SELECT CONDITION-VECT([σ]): 
+year==1997
+1.prod=prod
+1.month=month-1
+2.prod=prod
+2.month=month+1
+3.prod=prod
+3.month=month
+3.quant>1_avg_quant
+4.prod=prod
+4.month=month
+4.quant<2_avg_quant
+HAVING_CONDITION(G):
+3_count_prod > 1 

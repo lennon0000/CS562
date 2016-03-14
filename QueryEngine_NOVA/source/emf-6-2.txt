@@ -1,0 +1,20 @@
+TEST-not sure
+SELECT ATTRIBUTE(S):
+prod, month, 1_sum_quant/2_sum_quant 
+
+NUMBER OF GROUPING VARIABLES(n):
+2
+
+GROUPING ATTRIBUTES(V):
+prod, month
+
+F-VECT([F]):
+1_sum_quant, 2_sum_quant
+
+SELECT CONDITION-VECT([σ]): 
+year==1997
+1.prod=prod
+1.month=month
+2.prod=prod
+HAVING_CONDITION(G):
+

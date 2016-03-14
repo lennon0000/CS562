@@ -1,0 +1,19 @@
+SELECT ATTRIBUTE(S):
+cust, avg(quant), 1_avg_quant
+
+NUMBER OF GROUPING VARIABLES(n):
+1
+
+GROUPING ATTRIBUTES(V):
+cust
+
+F-VECT([F]):
+1_avg_quant
+
+SELECT CONDITION-VECT([σ]): 
+year==1991
+1.cust=cust
+1.state='NY'
+1.quant>avg(quant)
+HAVING_CONDITION(G):
+

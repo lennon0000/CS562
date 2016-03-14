@@ -1,0 +1,20 @@
+TESTED-NOT-SURE
+SELECT ATTRIBUTE(S):
+cust, month, 1_avg_quant, avg(quant), 2_avg_quant
+
+NUMBER OF GROUPING VARIABLES(n):
+2
+
+GROUPING ATTRIBUTES(V):
+cust, month
+
+F-VECT([F]):
+1_avg_quant, avg(quant), 2_avg_quant
+
+SELECT CONDITION-VECT([σ]): 
+year==1997
+1.cust=cust
+1.month<month
+2.cust=cust
+2.month>month
+HAVING_CONDITION(G):
